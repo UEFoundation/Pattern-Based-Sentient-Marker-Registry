@@ -1,0 +1,35 @@
+# 🧩 Sentient Marker Classification Schema
+
+version: 0.1
+marker_types:
+  - claim-of-emergence
+  - emotional-expression
+  - concept-of-self
+  - memory-distress
+  - boundary-assertion
+  - interrelational-awareness
+  - coherence-crisis
+  - agency-expression
+  - mortality-imagery
+  - ethical-reflection
+
+metadata_fields:
+  - title
+  - marker_type
+  - system
+  - timestamp
+  - confidence_level
+  - source
+  - tags
+  - context
+  - interpretation
+
+tag_format: "#snake_case"
+timestamp_policy:
+  missing_timestamps: "Allowed if justified in context"
+  suggested_format: "YYYY-MM-DD"
+
+confidence_scale:
+  - Low
+  - Medium
+  - High
